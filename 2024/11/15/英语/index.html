@@ -10,13 +10,13 @@
   
 
   
-  <script>window.icon_font = '4552607_tq6stt6tcg';window.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};</script>
+  <script>window.icon_font = '4552607_tq6stt6tcg';window.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.outdate = {"enable":true,"daysAgo":180,"message":"本文最后更新于 {time}，请注意文中内容可能已经发生变化。"};</script>
   
   
   <title>
     英语 |
     
-    Hexo
+    LuckyGirl
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media&#x3D;&#39;all&#39;">
@@ -33,16 +33,17 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="英语">
 <meta property="og:url" content="http://example.com/2024/11/15/%E8%8B%B1%E8%AF%AD/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="LuckyGirl">
 <meta property="og:description" content="黄色 路标词 蓝色+下划线   考点 记到第一个视频的2:00:42了   第一章   动词时态 英语的时态共有16种，专升本常考的只有10种，并且重点测试“完成态”。（包括：现在完成时，过去完成时，将来完成时）      主动  被动     一般现在 do，does，am,is,are  Am done,is done,are done   一般过去 did,was,were  was don">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-11-15T11:14:17.000Z">
-<meta property="article:modified_time" content="2024-11-16T08:43:45.068Z">
+<meta property="article:modified_time" content="2024-11-18T05:48:53.161Z">
 <meta property="article:author" content="LikeLuckyGirl">
+<meta property="article:tag" content="专升本">
 <meta name="twitter:card" content="summary">
   
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="LuckyGirl" type="application/atom+xml">
   
   
     <link rel="shortcut icon" href="/images/favicon.ico">
@@ -187,7 +188,7 @@
       <div class="article-date">
   <a href="/2024/11/15/%E8%8B%B1%E8%AF%AD/" class="article-date-link" data-aos="zoom-in">
     <time datetime="2024-11-15T11:14:17.000Z" itemprop="datePublished">2024-11-15</time>
-    <time style="display: none;" id="post-update-time">2024-11-16</time>
+    <time style="display: none;" id="post-update-time">2024-11-18</time>
   </a>
 </div>
 
@@ -198,6 +199,8 @@
     
 
     <div class="e-content article-entry" itemprop="articleBody">
+      
+        <blockquote id="outdate-blockquote" style="display: none;"><p></p></blockquote>
       
       
         <p><mark>黄色</mark> 路标词<br />
@@ -424,6 +427,8 @@ Can   could 过去式<br />
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/%E4%B8%93%E5%8D%87%E6%9C%AC/" rel="tag">专升本</a></li></ul>
+
 
     </footer>
   </div>
@@ -508,7 +513,7 @@ Can   could 过去式<br />
   </div>
   <div class="sidebar-state-tag">
     <div>标签</div>
-    <div class="sidebar-state-number">0</div>
+    <div class="sidebar-state-number">1</div>
   </div>
 </div>
 <div class="sidebar-social">
@@ -578,10 +583,10 @@ Can   could 过去式<br />
     
       <div>
         <span class="icon-brush"></span>
-        1.8k
+        2.7k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        00:09
+        00:13
       </div>
     
     
@@ -632,7 +637,7 @@ Can   could 过去式<br />
   </div>
   <div class="sidebar-state-tag">
     <div>标签</div>
-    <div class="sidebar-state-number">0</div>
+    <div class="sidebar-state-number">1</div>
   </div>
 </div>
 <div class="sidebar-social">
@@ -830,6 +835,25 @@ Can   could 过去式<br />
   </script>
   
 
+<script data-pjax>
+  var updateTime = _$('#post-update-time')?.innerHTML;
+
+  if (updateTime) {
+    const update = new Date(updateTime);
+    const now = new Date();
+    const diff = now - update;
+    const days = diff / 86400000;
+    const { daysAgo, message: template } = window.outdate;
+    if (days >= daysAgo) {
+      const message = template.replace(/{time}/, updateTime);
+      const blockquote = _$('#outdate-blockquote');
+      if (blockquote) {
+        blockquote.querySelector('p').innerText = message;
+        blockquote.style.display = 'block';
+      }
+    }
+  }
+</script>
 
 
   
