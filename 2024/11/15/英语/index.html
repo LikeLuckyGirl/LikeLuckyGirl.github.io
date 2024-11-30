@@ -418,11 +418,6 @@ Can   could 过去式<br />
 </div>
       
       
-        <a data-aos="zoom-in" href="/2024/11/15/%E8%8B%B1%E8%AF%AD/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2024/11/15/%E8%8B%B1%E8%AF%AD/" itemprop="commentCount"></span>
-          留言
-        </a>
-      
       
       
       
@@ -476,11 +471,11 @@ Can   could 过去式<br />
   
 </article>
 
-  <section id="comments" class="vcomment" data-aos="fade-up"></section>
 
 
 
 
+  <div id="comments" class="gscomment giscus" data-aos="fade-up"></div>
 
 
 </section>
@@ -765,41 +760,35 @@ Can   could 过去式<br />
 </script>
 
 
-  
-<script src="https://npm.webcache.cn/valine@1.5.1/dist/Valine.min.js" data-pjax></script>
+
+
+
+
+
+
+
 
   <script data-pjax>
-    var GUEST_INFO = ['nick', 'mail', 'link'];
-    var guest_info = 'nick,mail,link'.split(',').filter((item) => {
-      return GUEST_INFO.indexOf(item) > -1
-    });
-    var recordIP = JSON.parse('true');
-    var highlight = JSON.parse('true');
-    var visitor = JSON.parse('false');
-
-    new Valine({
-      el: '.vcomment',
-      appId: "4VTJvhjg0qMTNdMnbs8zikaT-gzGzoHsz",
-      appKey: "QVncc4Vb8zrOBPpbPRtpxRvA",
-      placeholder: "Just go go",
-      pageSize: '10',
-      avatar: 'mp',
-      lang: 'zh-cn',
-      recordIP: recordIP,
-      highlight: highlight,
-      visitor: visitor,
-      requiredFields: guest_info,
-      path: window.location.pathname
-    });
+    var giscusContainer = document.querySelector('.giscus');
+    if (giscusContainer) {
+      const giscusScript = document.createElement('script');
+      giscusScript.src = 'https://giscus.app/client.js';
+      giscusScript.setAttribute('data-repo', 'LikeLuckyGirl/LikeLuckyGirl.github.io');
+      giscusScript.setAttribute('data-repo-id', 'R_kgDONPtFpg');
+      giscusScript.setAttribute('data-category', 'Announcements'); 
+      giscusScript.setAttribute('data-category-id', 'DIC_kwDONPtFps4CkwIJ');
+      giscusScript.setAttribute('data-mapping', '0');
+      giscusScript.setAttribute('data-strict', '0');
+      giscusScript.setAttribute('data-reactions-enabled', '1');
+      giscusScript.setAttribute('data-emit-metadata', '0');
+      giscusScript.setAttribute('data-input-position', 'bottom');
+      giscusScript.setAttribute('data-theme', 'preferred_color_scheme');
+      giscusScript.setAttribute('data-lang', 'zh-CN');
+      giscusScript.setAttribute('crossorigin', 'anonymous');
+      giscusScript.async = true;
+      giscusContainer.appendChild(giscusScript);
+    }
   </script>
-
-
-
-
-
-
-
-
 
 
 
